@@ -1,11 +1,6 @@
-import json
 import re
 import pandas as pd
 import numpy as np
-import datetime
-from nltk import word_tokenize
-from nltk.stem.snowball import SnowballStemmer
-stemmer = SnowballStemmer("english")
 from sklearn.linear_model import Lasso, LogisticRegression
 from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
@@ -16,14 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 import tensorflow.compat.v1 as tf
 from random import sample
 tf.disable_v2_behavior()
-import re
-import spacy
-import collections
 # select en_core_web_lg or en_core_web_md for different language packages
-nlp = spacy.load("en_core_web_lg")
-import re
-import spacy
-import collections
 import random
 import pickle
 
